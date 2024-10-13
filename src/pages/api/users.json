@@ -1,0 +1,89 @@
+[
+  {
+    "nome": "aa",
+    "email": "aa@gmail.com",
+    "senha": "aa",
+    "pets": [
+      {
+        "nome_pet": "aa",
+        "especie": "aa",
+        "raca": "aa",
+        "idade": "1",
+        "peso": "1",
+        "cor": "aa",
+        "observacoes": ""
+      }
+    ],
+    "agendamentos": []
+  },
+  {
+    "nome": "bb",
+    "email": "bb@gmail.com",
+    "senha": "bb",
+    "pets": [
+      {
+        "nome_pet": "bb",
+        "especie": "bb",
+        "raca": "bb",
+        "idade": "1",
+        "peso": "2",
+        "cor": "aa",
+        "observacoes": "b"
+      }
+    ],
+    "agendamentos": [
+      {
+        "id": 1,
+        "servico": "Banho & Tosa",
+        "dia": "2024-10-17",
+        "hora": "14:00",
+        "observacoes": "b"
+      },
+      {
+        "id": 2,
+        "servico": "Banho & Tosa",
+        "dia": "2024-10-24",
+        "hora": "13:00",
+        "observacoes": "b"
+      },
+      {
+        "id": 3,
+        "servico": "Veterinário",
+        "dia": "2024-10-25",
+        "hora": "16:00",
+        "observacoes": "b"
+      },
+      {
+        "id": 4,
+        "servico": "",
+        "dia": "2024-10-17",
+        "hora": "11:00",
+        "observacoes": "a"
+      },
+      {
+        "id": 5,
+        "servico": "ApenasTosa",
+        "dia": "2024-10-18",
+        "hora": "16:00",
+        "observacoes": "a"
+      }
+    ]
+  },
+  {
+    "nome": "cc",
+    "email": "cc@gmail.com",
+    "senha": "cc",
+    "pets": [
+      {
+        "nome_pet": "cc",
+        "especie": "cc",
+        "raca": "ccc",
+        "idade": "1",
+        "peso": "2",
+        "cor": "cccc",
+        "observacoes": "ccccc"
+      }
+    ],
+    "agendamentos": []
+  }
+]

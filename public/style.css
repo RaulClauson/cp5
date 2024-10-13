@@ -1,0 +1,396 @@
+/*========================*/
+/*==========BASE==========*/
+/*========================*/
+
+:root {
+  --background: #f0ecf8;
+  --color: #4c48ce;
+  --color2: #a0a3f7;
+  --color3: #e0def7;
+  --color_deletar: #ff5c5f;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100dvh;
+}
+
+body {
+  color: var(--color);
+  background: var(--background);
+  font-family: var(--bespoke);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*========================*/
+/*========ELEMENTOS=======*/
+/*========================*/
+
+main {
+  padding: 80px 60px 150px 60px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 89dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+}
+
+main div {
+  width: 740px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-family: var(--bespoke);
+  font-size: 48px;
+  text-align: left;
+  margin: 0;
+}
+h1 span {
+  font-family: var(--bespoke) !important;
+  font-size: 48px !important;
+  text-align: left !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+  cursor: auto !important;
+}
+
+h2 {
+  font-family: var(--bespoke);
+  margin: 0;
+}
+
+p {
+  font-family: var(--poppins);
+  font-size: 16px;
+  text-align: left;
+  opacity: 0.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*========================*/
+/*==========HOME==========*/
+/*========================*/
+
+.home_titulo {
+  gap: 0;
+}
+
+.imagem_home {
+  width: 100%;
+  min-width: 0;
+  height: 70dvh;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+/*========================*/
+/*========SERVICOS========*/
+/*========================*/
+
+main div a {
+  background: var(--color);
+  color: var(--background);
+  padding: 18px 72px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 100px;
+  transition: 0.2s;
+  font-family: var(--poppins);
+}
+
+main div a:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+/*=======SERVIÇO CARD=====*/
+
+.servicos {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.servicos:hover .servico:not(:hover) {
+  opacity: 0.6;
+}
+.servicos:not(:hover) .servico {
+  opacity: 1;
+}
+.servico {
+  height: 405px;
+  width: 310px;
+  background-color: var(--color3);
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.servico:not(:hover) {
+  opacity: 0.6;
+}
+.servico div {
+  width: 100%;
+  height: 50%;
+  flex-shrink: 0;
+  padding: 27px 37px;
+  box-sizing: border-box;
+  background-color: var(--color);
+  color: var(--background);
+  display: block;
+}
+
+/*========================*/
+/*=======FORMULARIO=======*/
+/*========================*/
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  width: 100%;
+  height: 80px;
+  border: none;
+  padding: 28px 40px;
+  box-sizing: border-box;
+
+  background-color: var(--color3);
+  color: var(--color);
+  fill: var(--color);
+  font-family: var(--poppins);
+  outline: none;
+  border-radius: 24px;
+  transition: 0.2s;
+
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
+  border: 2px solid transparent !important;
+}
+
+input svg {
+  color: var(--color);
+  fill: var(--color);
+}
+
+input::placeholder {
+  color: var(--color);
+  opacity: 0.8;
+}
+
+textarea::placeholder {
+  color: var(--color);
+  opacity: 0.8;
+}
+
+input:focus {
+  font-size: 16px;
+  border: 2px solid var(--color2) !important;
+}
+
+textarea:focus {
+  font-size: 16px;
+  border: 2px solid var(--color2) !important;
+}
+
+textarea {
+  resize: none;
+  height: 122px;
+}
+
+select {
+  appearance: none;
+}
+
+.select_style {
+  position: relative;
+  width: 100%;
+}
+
+.select_style::before,
+.select_style::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1.5rem;
+  pointer-events: none;
+}
+
+.select_style::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid var(--color);
+  top: 50%;
+}
+
+button {
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--color);
+  color: var(--background);
+  border-radius: 100px;
+  font-size: 16px;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+.deletar {
+  background-color: var(--color_deletar);
+  opacity: 0.6;
+}
+
+.deletar:hover {
+  transform: scale(0.98);
+  opacity: 1;
+}
+
+form p {
+  text-align: center;
+  margin-top: 0;
+}
+
+form span {
+  text-align: center;
+  margin-top: 20px;
+  font-family: var(--poppins);
+  font-size: 14px;
+  color: var(--color2);
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1 !important;
+}
+form span:hover {
+  color: var(--color);
+}
+
+.bold {
+  color: var(--color);
+  text-decoration: underline;
+}
+
+form div {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+/*=========ETAPAS========*/
+
+.ativa {
+  position: absolute;
+  opacity: 1;
+}
+.ativa2 {
+  position: absolute;
+  width: 500px;
+  opacity: 1;
+}
+.desativa2 {
+  position: absolute;
+  pointer-events: none;
+  width: 500px;
+  opacity: 0;
+}
+.desativa {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.ativa span {
+  opacity: 0.6;
+  cursor: pointer;
+  font-family: var(--poppins);
+  font-size: 14px;
+}
+
+.ativa span:hover {
+  opacity: 1;
+}
+
+/*========================*/
+/*=====AGENDA / PERFIL====*/
+/*========================*/
+
+.listadiv {
+  justify-content: flex-end;
+}
+.lista {
+  width: 570px;
+  gap: 5px;
+}
+.lista h2 {
+  width: 100%;
+  padding-left: 60px;
+}
+.lista button {
+  background-color: var(--color3);
+  color: var(--color);
+  text-align: left;
+  margin: 0;
+  padding: 0px 28px 0px 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lista button svg {
+  stroke-width: 3px;
+  opacity: 0.8;
+}
+
+.divide_perfil {
+  margin: 28px;
+  width: -webkit-fill-available;
+  height: 3px;
+  background-color: var(--color3);
+}
+
+.sair {
+  background-color: var(--color_deletar) !important;
+  color: var(--background) !important;
+  opacity: 0.8;
+}
+.sair:hover {
+  opacity: 1;
+}
